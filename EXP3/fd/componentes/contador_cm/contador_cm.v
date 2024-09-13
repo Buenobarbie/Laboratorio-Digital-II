@@ -13,8 +13,8 @@
  */
  
 module contador_cm #(
-    parameter R = 10,  // razão de clocks por cm
-    parameter N = 4    // teto(log2(R))
+    parameter R = 2941,  // razão de clocks por cm
+    parameter N = 12    // teto(log2(R))
 ) (
     input wire        clock,
     input wire        reset,

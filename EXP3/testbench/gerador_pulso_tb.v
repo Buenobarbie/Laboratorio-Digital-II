@@ -24,7 +24,7 @@ module gerador_pulso_tb;
 
     // Instanciação do DUT
     gerador_pulso #(
-        .largura(25) // Largura do pulso (ajuste conforme necessário)
+        .largura(500) // Largura para um pulso de 10us (10us/20ns = 500)
     ) dut (
         .clock (clock ),
         .reset (reset ),

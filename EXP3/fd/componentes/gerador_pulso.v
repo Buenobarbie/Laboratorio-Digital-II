@@ -12,7 +12,7 @@
  */
 
 module gerador_pulso #(
-    parameter largura = 25
+    parameter largura = 25 // períodos de clock
 ) (
     input wire clock,
     input wire reset,

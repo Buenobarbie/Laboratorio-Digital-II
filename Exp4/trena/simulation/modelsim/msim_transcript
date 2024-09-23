@@ -1,0 +1,295 @@
+# Reading pref.tcl
+# ERROR: No extended dataflow license exists
+# do exp4_trena_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_uc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:17 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_uc.v 
+# -- Compiling module tx_serial_uc
+# 
+# Top level modules:
+# 	tx_serial_uc
+# End time: 17:56:17 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_7O1_fd.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:17 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_7O1_fd.v 
+# -- Compiling module tx_serial_7O1_fd
+# 
+# Top level modules:
+# 	tx_serial_7O1_fd
+# End time: 17:56:17 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_7O1.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:17 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_7O1.v 
+# -- Compiling module tx_serial_7O1
+# 
+# Top level modules:
+# 	tx_serial_7O1
+# End time: 17:56:17 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/trena_uc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:17 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/trena_uc.v 
+# -- Compiling module trena_uc
+# 
+# Top level modules:
+# 	trena_uc
+# End time: 17:56:17 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/trena_fd.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:17 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/trena_fd.v 
+# -- Compiling module trena_fd
+# 
+# Top level modules:
+# 	trena_fd
+# End time: 17:56:18 on Sep 23,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/registrador_n.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:18 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/registrador_n.v 
+# -- Compiling module registrador_n
+# 
+# Top level modules:
+# 	registrador_n
+# End time: 17:56:18 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/mux_4x1_n.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:18 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/mux_4x1_n.v 
+# -- Compiling module mux_4x1_n
+# 
+# Top level modules:
+# 	mux_4x1_n
+# End time: 17:56:18 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04_uc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:18 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04_uc.v 
+# -- Compiling module interface_hcsr04_uc
+# 
+# Top level modules:
+# 	interface_hcsr04_uc
+# End time: 17:56:19 on Sep 23,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04_fd.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:19 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04_fd.v 
+# -- Compiling module interface_hcsr04_fd
+# 
+# Top level modules:
+# 	interface_hcsr04_fd
+# End time: 17:56:19 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:19 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04.v 
+# -- Compiling module interface_hcsr04
+# 
+# Top level modules:
+# 	interface_hcsr04
+# End time: 17:56:19 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/hexa7seg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:20 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/hexa7seg.v 
+# -- Compiling module hexa7seg
+# 
+# Top level modules:
+# 	hexa7seg
+# End time: 17:56:20 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/gerador_pulso.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:20 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/gerador_pulso.v 
+# -- Compiling module gerador_pulso
+# 
+# Top level modules:
+# 	gerador_pulso
+# End time: 17:56:20 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:21 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena.v 
+# -- Compiling module exp4_trena
+# 
+# Top level modules:
+# 	exp4_trena
+# End time: 17:56:21 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/edge_detector.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:21 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/edge_detector.v 
+# -- Compiling module edge_detector
+# 
+# Top level modules:
+# 	edge_detector
+# End time: 17:56:21 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/deslocador_n.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:21 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/deslocador_n.v 
+# -- Compiling module deslocador_n
+# 
+# Top level modules:
+# 	deslocador_n
+# End time: 17:56:21 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_m.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:21 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_m.v 
+# -- Compiling module contador_m
+# 
+# Top level modules:
+# 	contador_m
+# End time: 17:56:21 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm_uc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:21 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm_uc.v 
+# -- Compiling module contador_cm_uc
+# 
+# Top level modules:
+# 	contador_cm_uc
+# End time: 17:56:21 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm_fd.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:21 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm_fd.v 
+# -- Compiling module contador_cm_fd
+# 
+# Top level modules:
+# 	contador_cm_fd
+# End time: 17:56:22 on Sep 23,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:22 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm.v 
+# -- Compiling module contador_cm
+# 
+# Top level modules:
+# 	contador_cm
+# End time: 17:56:22 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_bcd_3digitos.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:22 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_bcd_3digitos.v 
+# -- Compiling module contador_bcd_3digitos
+# 
+# Top level modules:
+# 	contador_bcd_3digitos
+# End time: 17:56:22 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena {C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:56:22 on Sep 23,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena" C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena_tb.v 
+# -- Compiling module exp4_trena_tb
+# 
+# Top level modules:
+# 	exp4_trena_tb
+# End time: 17:56:22 on Sep 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  exp4_trena_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" exp4_trena_tb 
+# Start time: 17:56:22 on Sep 23,2024
+# Loading work.exp4_trena_tb
+# Loading work.exp4_trena
+# Loading work.edge_detector
+# Loading work.trena_fd
+# Loading work.interface_hcsr04
+# Loading work.interface_hcsr04_uc
+# Loading work.interface_hcsr04_fd
+# Loading work.gerador_pulso
+# Loading work.contador_cm
+# Loading work.contador_cm_fd
+# Loading work.contador_m
+# Loading work.contador_bcd_3digitos
+# Loading work.contador_cm_uc
+# Loading work.registrador_n
+# Loading work.mux_4x1_n
+# Loading work.tx_serial_7O1
+# Loading work.tx_serial_7O1_fd
+# Loading work.deslocador_n
+# Loading work.tx_serial_uc
+# Loading work.trena_uc
+# Loading work.hexa7seg
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /exp4_trena_tb/dut/U0/U1/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Inicio das simulacoes
+# Caso de teste 1: 5882us
+# Fim do caso 1
+# Caso de teste 2: 5899us
+# Fim do caso 2
+# Caso de teste 3: 4353us
+# Fim do caso 3
+# Caso de teste 4: 4399us
+# Fim do caso 4
+# Fim das simulacoes
+# ** Note: $stop    : C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena_tb.v(106)
+#    Time: 40969510 ns  Iteration: 0  Instance: /exp4_trena_tb
+# Break in Module exp4_trena_tb at C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena_tb.v line 106
+add wave -position insertpoint sim:/exp4_trena_tb/dut/U0/*
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /exp4_trena_tb/dut/U0/U1/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Inicio das simulacoes
+# Caso de teste 1: 5882us
+# Fim do caso 1
+# Caso de teste 2: 5899us
+# Fim do caso 2
+# Caso de teste 3: 4353us
+# Fim do caso 3
+# Caso de teste 4: 4399us
+# Fim do caso 4
+# Fim das simulacoes
+# ** Note: $stop    : C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena_tb.v(106)
+#    Time: 40969510 ns  Iteration: 0  Instance: /exp4_trena_tb
+# Break in Module exp4_trena_tb at C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena_tb.v line 106

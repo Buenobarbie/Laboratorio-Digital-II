@@ -1,0 +1,476 @@
+# Compile of circuito_pwm.v was successful.
+# Compile of contador_bcd_3digitos.v was successful.
+# Compile of contador_cm.v was successful.
+# Compile of contador_cm_fd.v was successful.
+# Compile of contador_cm_uc.v was successful.
+# Compile of contador_m.v was successful.
+# Compile of controle_servo.v was successful.
+# Compile of deslocador_n.v was successful.
+# Compile of edge_detector.v was successful.
+# Compile of exp4_trena.v was successful.
+# Compile of exp4_trena_tb.v was successful.
+# Compile of gerador_pulso.v was successful.
+# Compile of hexa7seg.v was successful.
+# Compile of interface_hcsr04.v was successful.
+# Compile of interface_hcsr04_fd.v was successful.
+# Compile of interface_hcsr04_uc.v was successful.
+# Compile of mux_4x1_n.v was successful.
+# Compile of registrador_n.v was successful.
+# Compile of trena_fd.v was successful.
+# Compile of trena_uc.v was successful.
+# Compile of tx_serial_7O1.v was successful.
+# Compile of tx_serial_7O1_fd.v was successful.
+# Compile of tx_serial_uc.v was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -gui work.tx_serial_uc work.tx_serial_7O1_fd work.tx_serial_7O1 work.trena_uc work.trena_fd work.registrador_n work.mux_4x1_n work.interface_hcsr04_uc work.interface_hcsr04_fd work.interface_hcsr04 work.hexa7seg work.gerador_pulso work.exp4_trena_tb work.exp4_trena work.edge_detector work.deslocador_n work.controle_servo work.contador_m work.contador_cm_uc work.contador_cm_fd work.contador_cm work.contador_bcd_3digitos work.circuito_pwm
+# vsim -gui work.tx_serial_uc work.tx_serial_7O1_fd work.tx_serial_7O1 work.trena_uc work.trena_fd work.registrador_n work.mux_4x1_n work.interface_hcsr04_uc work.interface_hcsr04_fd work.interface_hcsr04 work.hexa7seg work.gerador_pulso work.exp4_trena_tb work.exp4_trena work.edge_detector work.deslocador_n work.controle_servo work.contador_m work.contador_cm_uc work.contador_cm_fd work.contador_cm work.contador_bcd_3digitos work.circuito_pwm 
+# Start time: 11:16:21 on Sep 23,2024
+# Loading work.tx_serial_uc
+# Loading work.tx_serial_7O1_fd
+# Loading work.deslocador_n
+# Loading work.contador_m
+# Loading work.tx_serial_7O1
+# Loading work.trena_uc
+# Loading work.trena_fd
+# Loading work.interface_hcsr04
+# Loading work.interface_hcsr04_uc
+# Loading work.interface_hcsr04_fd
+# Loading work.gerador_pulso
+# Loading work.contador_cm
+# Loading work.contador_cm_fd
+# Loading work.contador_bcd_3digitos
+# Loading work.contador_cm_uc
+# Loading work.registrador_n
+# Loading work.mux_4x1_n
+# Loading work.hexa7seg
+# Loading work.exp4_trena_tb
+# Loading work.exp4_trena
+# Loading work.edge_detector
+# Loading work.controle_servo
+# Loading work.circuito_pwm
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /trena_fd/U1/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /trena_fd/U3 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v Line: 52
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /interface_hcsr04_fd/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /interface_hcsr04/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena.v Line: 36
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0/U1/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0/U3 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v Line: 52
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena/U0 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena.v Line: 36
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena/U0/U1/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena/U0/U3 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v Line: 52
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /contador_cm/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# WARNING: No extended dataflow license exists
+quit -sim
+# End time: 11:16:51 on Sep 23,2024, Elapsed time: 0:00:30
+# Errors: 0, Warnings: 22
+vsim -gui work.exp4_trena_tb
+# vsim -gui work.exp4_trena_tb 
+# Start time: 11:17:03 on Sep 23,2024
+# Loading work.exp4_trena_tb
+# Loading work.exp4_trena
+# Loading work.edge_detector
+# Loading work.trena_fd
+# Loading work.interface_hcsr04
+# Loading work.interface_hcsr04_uc
+# Loading work.interface_hcsr04_fd
+# Loading work.gerador_pulso
+# Loading work.contador_cm
+# Loading work.contador_cm_fd
+# Loading work.contador_m
+# Loading work.contador_bcd_3digitos
+# Loading work.contador_cm_uc
+# Loading work.registrador_n
+# Loading work.mux_4x1_n
+# Loading work.tx_serial_7O1
+# Loading work.tx_serial_7O1_fd
+# Loading work.deslocador_n
+# Loading work.tx_serial_uc
+# Loading work.trena_uc
+# Loading work.hexa7seg
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena.v Line: 36
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0/U1/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0/U3 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v Line: 52
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/exp4_trena_tb/clockPeriod \
+sim:/exp4_trena_tb/clock_in \
+sim:/exp4_trena_tb/reset_in \
+sim:/exp4_trena_tb/mensurar_in \
+sim:/exp4_trena_tb/echo_in \
+sim:/exp4_trena_tb/trigger_out \
+sim:/exp4_trena_tb/saida_serial_out \
+sim:/exp4_trena_tb/medida0_out \
+sim:/exp4_trena_tb/medida1_out \
+sim:/exp4_trena_tb/medida2_out \
+sim:/exp4_trena_tb/pronto_out \
+sim:/exp4_trena_tb/db_estado_out \
+sim:/exp4_trena_tb/db_echo_out \
+sim:/exp4_trena_tb/db_trigger_out \
+sim:/exp4_trena_tb/casos_teste \
+sim:/exp4_trena_tb/caso \
+sim:/exp4_trena_tb/larguraPulso
+# Load canceled
+run -all
+# Inicio das simulacoes
+# Caso de teste 1: 5882us
+# Fim do caso 1
+# Caso de teste 2: 5899us
+# Fim do caso 2
+# Caso de teste 3: 4353us
+# Fim do caso 3
+# Caso de teste 4: 4399us
+# Fim do caso 4
+# Fim das simulacoes
+# ** Note: $stop    : C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena_tb.v(106)
+#    Time: 40969510 ns  Iteration: 0  Instance: /exp4_trena_tb
+# Break in Module exp4_trena_tb at C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena_tb.v line 106
+quit -sim
+# End time: 11:43:39 on Sep 23,2024, Elapsed time: 0:26:36
+# Errors: 0, Warnings: 5
+vsim -gui work.exp4_trena_tb work.exp4_trena
+# vsim -gui work.exp4_trena_tb work.exp4_trena 
+# Start time: 11:44:26 on Sep 23,2024
+# Loading work.exp4_trena_tb
+# Loading work.exp4_trena
+# Loading work.edge_detector
+# Loading work.trena_fd
+# Loading work.interface_hcsr04
+# Loading work.interface_hcsr04_uc
+# Loading work.interface_hcsr04_fd
+# Loading work.gerador_pulso
+# Loading work.contador_cm
+# Loading work.contador_cm_fd
+# Loading work.contador_m
+# Loading work.contador_bcd_3digitos
+# Loading work.contador_cm_uc
+# Loading work.registrador_n
+# Loading work.mux_4x1_n
+# Loading work.tx_serial_7O1
+# Loading work.tx_serial_7O1_fd
+# Loading work.deslocador_n
+# Loading work.tx_serial_uc
+# Loading work.trena_uc
+# Loading work.hexa7seg
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena.v Line: 36
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0/U1/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0/U3 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v Line: 52
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena/U0 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena.v Line: 36
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena/U0/U1/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena/U0/U3 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v Line: 52
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/exp4_trena_tb/clockPeriod \
+sim:/exp4_trena_tb/clock_in \
+sim:/exp4_trena_tb/reset_in \
+sim:/exp4_trena_tb/mensurar_in \
+sim:/exp4_trena_tb/echo_in \
+sim:/exp4_trena_tb/trigger_out \
+sim:/exp4_trena_tb/saida_serial_out \
+sim:/exp4_trena_tb/medida0_out \
+sim:/exp4_trena_tb/medida1_out \
+sim:/exp4_trena_tb/medida2_out \
+sim:/exp4_trena_tb/pronto_out \
+sim:/exp4_trena_tb/db_estado_out \
+sim:/exp4_trena_tb/db_echo_out \
+sim:/exp4_trena_tb/db_trigger_out \
+sim:/exp4_trena_tb/casos_teste \
+sim:/exp4_trena_tb/caso \
+sim:/exp4_trena_tb/larguraPulso
+add wave -position insertpoint  \
+sim:/exp4_trena/s_estado
+add wave -position insertpoint  \
+sim:/exp4_trena/s_sel_letra
+run -all
+# Inicio das simulacoes
+# Caso de teste 1: 5882us
+# Fim do caso 1
+# Caso de teste 2: 5899us
+# Fim do caso 2
+# Caso de teste 3: 4353us
+# Fim do caso 3
+# Caso de teste 4: 4399us
+# Fim do caso 4
+# Fim das simulacoes
+# ** Note: $stop    : C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena_tb.v(106)
+#    Time: 40969510 ns  Iteration: 0  Instance: /exp4_trena_tb
+# Break in Module exp4_trena_tb at C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena_tb.v line 106
+quit -sim
+# End time: 11:46:51 on Sep 23,2024, Elapsed time: 0:02:25
+# Errors: 0, Warnings: 9
+vsim -gui work.trena_uc work.trena_fd work.exp4_trena_tb work.exp4_trena
+# vsim -gui work.trena_uc work.trena_fd work.exp4_trena_tb work.exp4_trena 
+# Start time: 11:47:19 on Sep 23,2024
+# Loading work.trena_uc
+# Loading work.trena_fd
+# Loading work.interface_hcsr04
+# Loading work.interface_hcsr04_uc
+# Loading work.interface_hcsr04_fd
+# Loading work.gerador_pulso
+# Loading work.contador_cm
+# Loading work.contador_cm_fd
+# Loading work.contador_m
+# Loading work.contador_bcd_3digitos
+# Loading work.contador_cm_uc
+# Loading work.registrador_n
+# Loading work.mux_4x1_n
+# Loading work.tx_serial_7O1
+# Loading work.tx_serial_7O1_fd
+# Loading work.deslocador_n
+# Loading work.tx_serial_uc
+# Loading work.exp4_trena_tb
+# Loading work.exp4_trena
+# Loading work.edge_detector
+# Loading work.hexa7seg
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /trena_fd/U1/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /trena_fd/U3 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v Line: 52
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena.v Line: 36
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0/U1/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0/U3 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v Line: 52
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena/U0 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena.v Line: 36
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena/U0/U1/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena/U0/U3 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v Line: 52
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/exp4_trena_tb/clockPeriod \
+sim:/exp4_trena_tb/clock_in \
+sim:/exp4_trena_tb/reset_in \
+sim:/exp4_trena_tb/mensurar_in \
+sim:/exp4_trena_tb/echo_in \
+sim:/exp4_trena_tb/trigger_out \
+sim:/exp4_trena_tb/saida_serial_out \
+sim:/exp4_trena_tb/medida0_out \
+sim:/exp4_trena_tb/medida1_out \
+sim:/exp4_trena_tb/medida2_out \
+sim:/exp4_trena_tb/pronto_out \
+sim:/exp4_trena_tb/db_estado_out \
+sim:/exp4_trena_tb/db_echo_out \
+sim:/exp4_trena_tb/db_trigger_out \
+sim:/exp4_trena_tb/casos_teste \
+sim:/exp4_trena_tb/caso \
+sim:/exp4_trena_tb/larguraPulso
+add wave -position insertpoint  \
+sim:/trena_uc/Eatual
+add wave -position insertpoint  \
+sim:/trena_uc/sel_letra
+run -all
+# Inicio das simulacoes
+# Caso de teste 1: 5882us
+# Fim do caso 1
+# Caso de teste 2: 5899us
+# Fim do caso 2
+# Caso de teste 3: 4353us
+# Fim do caso 3
+# Caso de teste 4: 4399us
+# Fim do caso 4
+# Fim das simulacoes
+# ** Note: $stop    : C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena_tb.v(106)
+#    Time: 40969510 ns  Iteration: 0  Instance: /exp4_trena_tb
+# Break in Module exp4_trena_tb at C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena_tb.v line 106
+# Break key hit
+run -all
+# Break key hit
+# Simulation stop requested.
+run -all
+# Break key hit
+# Break in Module interface_hcsr04_uc at C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/interface_hcsr04_uc.v line 40
+quit -sim
+# End time: 11:52:05 on Sep 23,2024, Elapsed time: 0:04:46
+# Errors: 0, Warnings: 12
+vsim -gui work.tx_serial_uc work.tx_serial_7O1_fd work.tx_serial_7O1 work.trena_uc work.trena_fd work.registrador_n work.mux_4x1_n work.interface_hcsr04_uc work.interface_hcsr04_fd work.interface_hcsr04 work.hexa7seg work.gerador_pulso work.exp4_trena_tb work.exp4_trena work.edge_detector work.deslocador_n work.controle_servo work.contador_m work.contador_cm_uc work.contador_cm_fd work.contador_cm work.contador_bcd_3digitos work.circuito_pwm
+# vsim -gui work.tx_serial_uc work.tx_serial_7O1_fd work.tx_serial_7O1 work.trena_uc work.trena_fd work.registrador_n work.mux_4x1_n work.interface_hcsr04_uc work.interface_hcsr04_fd work.interface_hcsr04 work.hexa7seg work.gerador_pulso work.exp4_trena_tb work.exp4_trena work.edge_detector work.deslocador_n work.controle_servo work.contador_m work.contador_cm_uc work.contador_cm_fd work.contador_cm work.contador_bcd_3digitos work.circuito_pwm 
+# Start time: 11:53:05 on Sep 23,2024
+# Loading work.tx_serial_uc
+# Loading work.tx_serial_7O1_fd
+# Loading work.deslocador_n
+# Loading work.contador_m
+# Loading work.tx_serial_7O1
+# Loading work.trena_uc
+# Loading work.trena_fd
+# Loading work.interface_hcsr04
+# Loading work.interface_hcsr04_uc
+# Loading work.interface_hcsr04_fd
+# Loading work.gerador_pulso
+# Loading work.contador_cm
+# Loading work.contador_cm_fd
+# Loading work.contador_bcd_3digitos
+# Loading work.contador_cm_uc
+# Loading work.registrador_n
+# Loading work.mux_4x1_n
+# Loading work.hexa7seg
+# Loading work.exp4_trena_tb
+# Loading work.exp4_trena
+# Loading work.edge_detector
+# Loading work.controle_servo
+# Loading work.circuito_pwm
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /trena_fd/U1/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /trena_fd/U3 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v Line: 52
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /interface_hcsr04_fd/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /interface_hcsr04/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena.v Line: 36
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0/U1/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0/U3 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v Line: 52
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (1) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v(12).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena/U0 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena.v Line: 36
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena/U0/U1/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (7) for port 'saida_serial'. The port definition is at: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1.v(10).
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena/U0/U3 File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v Line: 52
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /contador_cm/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/exp4_trena_tb/clockPeriod \
+sim:/exp4_trena_tb/clock_in \
+sim:/exp4_trena_tb/reset_in \
+sim:/exp4_trena_tb/mensurar_in \
+sim:/exp4_trena_tb/echo_in \
+sim:/exp4_trena_tb/trigger_out \
+sim:/exp4_trena_tb/saida_serial_out \
+sim:/exp4_trena_tb/medida0_out \
+sim:/exp4_trena_tb/medida1_out \
+sim:/exp4_trena_tb/medida2_out \
+sim:/exp4_trena_tb/pronto_out \
+sim:/exp4_trena_tb/db_estado_out \
+sim:/exp4_trena_tb/db_echo_out \
+sim:/exp4_trena_tb/db_trigger_out \
+sim:/exp4_trena_tb/casos_teste \
+sim:/exp4_trena_tb/caso \
+sim:/exp4_trena_tb/larguraPulso
+add wave -position insertpoint  \
+sim:/trena_uc/pronto_serial \
+sim:/trena_uc/partida_serial \
+sim:/trena_uc/sel_letra \
+sim:/trena_uc/db_estado
+run -all
+# Inicio das simulacoes
+# Caso de teste 1: 5882us
+# Fim do caso 1
+# Caso de teste 2: 5899us
+# Fim do caso 2
+# Caso de teste 3: 4353us
+# Fim do caso 3
+# Caso de teste 4: 4399us
+# Fim do caso 4
+# Fim das simulacoes
+# ** Note: $stop    : C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena_tb.v(106)
+#    Time: 40969510 ns  Iteration: 0  Instance: /exp4_trena_tb
+# Break in Module exp4_trena_tb at C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena_tb.v line 106
+quit -sim
+# End time: 11:57:57 on Sep 23,2024, Elapsed time: 0:04:52
+# Errors: 0, Warnings: 18
+# Compile of trena_fd.v was successful.
+vsim -gui work.exp4_trena_tb
+# vsim -gui work.exp4_trena_tb 
+# Start time: 11:58:58 on Sep 23,2024
+# Loading work.exp4_trena_tb
+# Loading work.exp4_trena
+# Loading work.edge_detector
+# Loading work.trena_fd
+# Loading work.interface_hcsr04
+# Loading work.interface_hcsr04_uc
+# Loading work.interface_hcsr04_fd
+# Loading work.gerador_pulso
+# Loading work.contador_cm
+# Loading work.contador_cm_fd
+# Loading work.contador_m
+# Loading work.contador_bcd_3digitos
+# Loading work.contador_cm_uc
+# Loading work.registrador_n
+# Loading work.mux_4x1_n
+# Loading work.tx_serial_7O1
+# Loading work.tx_serial_7O1_fd
+# Loading work.deslocador_n
+# Loading work.tx_serial_uc
+# Loading work.trena_uc
+# Loading work.hexa7seg
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'UC'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /exp4_trena_tb/dut/U0/U1/U2/U2/UC File: C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v Line: 51
+# ** Warning: (vsim-3722) C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v(51): [TFMPC] - Missing connection for port 'db_estado'.
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint  \
+sim:/exp4_trena_tb/clockPeriod \
+sim:/exp4_trena_tb/clock_in \
+sim:/exp4_trena_tb/reset_in \
+sim:/exp4_trena_tb/mensurar_in \
+sim:/exp4_trena_tb/echo_in \
+sim:/exp4_trena_tb/trigger_out \
+sim:/exp4_trena_tb/saida_serial_out \
+sim:/exp4_trena_tb/medida0_out \
+sim:/exp4_trena_tb/medida1_out \
+sim:/exp4_trena_tb/medida2_out \
+sim:/exp4_trena_tb/pronto_out \
+sim:/exp4_trena_tb/db_estado_out \
+sim:/exp4_trena_tb/db_echo_out \
+sim:/exp4_trena_tb/db_trigger_out \
+sim:/exp4_trena_tb/casos_teste \
+sim:/exp4_trena_tb/caso \
+sim:/exp4_trena_tb/larguraPulso
+run -all
+# Inicio das simulacoes
+# Caso de teste 1: 5882us
+# Fim do caso 1
+# Caso de teste 2: 5899us
+# Fim do caso 2
+# Caso de teste 3: 4353us
+# Fim do caso 3
+# Caso de teste 4: 4399us
+# Fim do caso 4
+# Fim das simulacoes
+# ** Note: $stop    : C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena_tb.v(106)
+#    Time: 40969510 ns  Iteration: 0  Instance: /exp4_trena_tb
+# Break in Module exp4_trena_tb at C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena_tb.v line 106
+# End time: 12:21:11 on Sep 23,2024, Elapsed time: 0:22:13
+# Errors: 0, Warnings: 5

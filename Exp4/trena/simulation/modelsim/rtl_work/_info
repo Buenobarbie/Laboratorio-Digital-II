@@ -1,0 +1,517 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/simulation/modelsim
+vcontador_bcd_3digitos
+Z1 !s110 1727124982
+!i10b 1
+!s100 <^UI=CGojd5P<hV7RJ>3<1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I1WL<=M^XHz?8hefZc:SjR1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1726441620
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_bcd_3digitos.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_bcd_3digitos.v
+!i122 19
+L0 14 45
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1727124982.000000
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_bcd_3digitos.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_bcd_3digitos.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena
+Z9 tCvgOpt 0
+vcontador_cm
+R1
+!i10b 1
+!s100 Pi<5]hERfFZc>Kj7g1gO<0
+R2
+I;eg6^Om;m?FZ>Ho[Mf^HY0
+R3
+R0
+w1726448271
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm.v
+!i122 18
+L0 15 47
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm.v|
+!i113 1
+R7
+R8
+R9
+vcontador_cm_fd
+R1
+!i10b 1
+!s100 D>iG53QEGCIDVPH<iPn202
+R2
+IeANi20R]LSGQ>[fO72iaO1
+R3
+R0
+w1726576167
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm_fd.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm_fd.v
+!i122 17
+L0 15 43
+R5
+r1
+!s85 0
+31
+Z10 !s108 1727124981.000000
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm_fd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm_fd.v|
+!i113 1
+R7
+R8
+R9
+vcontador_cm_uc
+Z11 !s110 1727124981
+!i10b 1
+!s100 L`J>o=f1iD]GLBMIQ9JkO3
+R2
+IMJ:YA:c`CQz9QoaIenB8n1
+R3
+R0
+w1726448175
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm_uc.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm_uc.v
+!i122 16
+L0 16 53
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm_uc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_cm_uc.v|
+!i113 1
+R7
+R8
+R9
+vcontador_m
+R11
+!i10b 1
+!s100 OlC:diTTl?WLK4kQa`SF81
+R2
+IYT1U3oVAYK>`^T=@NlSOF2
+R3
+R0
+R4
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_m.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_m.v
+!i122 15
+L0 16 38
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_m.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/contador_m.v|
+!i113 1
+R7
+R8
+R9
+vdeslocador_n
+R11
+!i10b 1
+!s100 ;dQ`^2^_dFVJFiWBcXhWF1
+R2
+I7j=FiDnF5=:PcNObM]>X_1
+R3
+R0
+Z12 w1725831885
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/deslocador_n.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/deslocador_n.v
+!i122 14
+L0 15 31
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/deslocador_n.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/deslocador_n.v|
+!i113 1
+R7
+R8
+R9
+vedge_detector
+R11
+!i10b 1
+!s100 HONc`3DYN?oT0WzL?@;`U3
+R2
+IR<o73O]b36C6V>BkQ1kf=0
+R3
+R0
+R4
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/edge_detector.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/edge_detector.v
+!i122 13
+L0 19 23
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/edge_detector.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/edge_detector.v|
+!i113 1
+R7
+R8
+R9
+vexp4_trena
+R11
+!i10b 1
+!s100 KnFHJfgg`jaQQ8Y7iB?z?2
+R2
+Ig?4RNg7T>dQZY^H8ePiU[2
+R3
+R0
+w1727102185
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena.v
+!i122 12
+L0 1 88
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena.v|
+!i113 1
+R7
+R8
+R9
+vexp4_trena_tb
+R1
+!i10b 1
+!s100 H?N[JCoa;iX9DE4@nJz@@0
+R2
+IaWaz^0L7bQ_XL<5IbAg=R2
+R3
+R0
+w1727099968
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena_tb.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena_tb.v
+!i122 20
+L0 4 105
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/exp4_trena_tb.v|
+!i113 1
+R7
+R8
+R9
+vgerador_pulso
+Z13 !s110 1727124980
+!i10b 1
+!s100 VaQdY[mS=m^8X1_`;>?BZ3
+R2
+I5?c@>J1_M>[o]^LNCS:6T2
+R3
+R0
+R4
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/gerador_pulso.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/gerador_pulso.v
+!i122 11
+L0 14 69
+R5
+r1
+!s85 0
+31
+Z14 !s108 1727124980.000000
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/gerador_pulso.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/gerador_pulso.v|
+!i113 1
+R7
+R8
+R9
+vhexa7seg
+R13
+!i10b 1
+!s100 En:DNl:fD8H^<k:<7TenN2
+R2
+I5_VW7I6oGz;cOhFJeKdMZ0
+R3
+R0
+R4
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/hexa7seg.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/hexa7seg.v
+!i122 10
+L0 22 38
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/hexa7seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/hexa7seg.v|
+!i113 1
+R7
+R8
+R9
+vinterface_hcsr04
+Z15 !s110 1727124979
+!i10b 1
+!s100 [c`eEGe2XZD`H9=8jlhd32
+R2
+Iia?:e:zIEAMImo<lN;RmS3
+R3
+R0
+w1726583020
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04.v
+!i122 9
+L0 13 50
+R5
+r1
+!s85 0
+31
+Z16 !s108 1727124979.000000
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04.v|
+!i113 1
+R7
+R8
+R9
+vinterface_hcsr04_fd
+R15
+!i10b 1
+!s100 UijoS32EMe<7?CFa9N0de1
+R2
+IYXZ;FNef7;TjH_T>]Ad>33
+R3
+R0
+w1726576117
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04_fd.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04_fd.v
+!i122 8
+L0 14 54
+R5
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04_fd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04_fd.v|
+!i113 1
+R7
+R8
+R9
+vinterface_hcsr04_uc
+R15
+!i10b 1
+!s100 Rnb2<>FRgch;l4@>A3d_l3
+R2
+IGidWe?_=I]_CRce>eflRR0
+R3
+R0
+w1726450269
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04_uc.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04_uc.v
+!i122 7
+L0 14 67
+R5
+r1
+!s85 0
+31
+Z17 !s108 1727124978.000000
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04_uc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/interface_hcsr04_uc.v|
+!i113 1
+R7
+R8
+R9
+vmux_4x1_n
+Z18 !s110 1727124978
+!i10b 1
+!s100 mb6d=C[__<57k6UKFBS4^0
+R2
+IGGiFhFaUVMLS^;1cAb5kl1
+R3
+R0
+w1727095412
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/mux_4x1_n.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/mux_4x1_n.v
+!i122 6
+L0 17 18
+R5
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/mux_4x1_n.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/mux_4x1_n.v|
+!i113 1
+R7
+R8
+R9
+vregistrador_n
+R18
+!i10b 1
+!s100 D5Sh>b;z23[i7h72P_Xha0
+R2
+IYzRnb[NV65o8CJD2agG_X0
+R3
+R0
+R4
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/registrador_n.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/registrador_n.v
+!i122 5
+L0 17 20
+R5
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/registrador_n.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/registrador_n.v|
+!i113 1
+R7
+R8
+R9
+vtrena_fd
+R18
+!i10b 1
+!s100 3>Nh4HXY9XGd6]R0]6C;N0
+R2
+IZS@XjZ8;:`=AQG`_>aI`d2
+R3
+R0
+w1727103422
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/trena_fd.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/trena_fd.v
+!i122 4
+L0 1 67
+R5
+r1
+!s85 0
+31
+Z19 !s108 1727124977.000000
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/trena_fd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/trena_fd.v|
+!i113 1
+R7
+R8
+R9
+vtrena_uc
+Z20 !s110 1727124977
+!i10b 1
+!s100 :IaEBQQNYmS1:cP>l:z0_0
+R2
+IEG9[lX8IKSbTQgD0lX>cS3
+R3
+R0
+w1727124754
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/trena_uc.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/trena_uc.v
+!i122 3
+L0 2 86
+R5
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/trena_uc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/trena_uc.v|
+!i113 1
+R7
+R8
+R9
+vtx_serial_7O1
+R20
+!i10b 1
+!s100 `dK=IQD8e>G?Wcl<dn^Dj1
+R2
+IIn4;:[:4VY]6QKQI0Gba73
+R3
+R0
+w1727098179
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_7O1.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_7O1.v
+!i122 2
+L0 5 88
+R5
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_7O1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_7O1.v|
+!i113 1
+R7
+R8
+R9
+ntx_serial_7@o1
+vtx_serial_7O1_fd
+R20
+!i10b 1
+!s100 lUQb`Agg6I4<m^La?>Wmc3
+R2
+IaX^:`3;lPe4P82IHk3[8;3
+R3
+R0
+w1727100055
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_7O1_fd.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_7O1_fd.v
+!i122 1
+L0 1 53
+R5
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_7O1_fd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_7O1_fd.v|
+!i113 1
+R7
+R8
+R9
+ntx_serial_7@o1_fd
+vtx_serial_uc
+R20
+!i10b 1
+!s100 @nWRPSYhEfjIg;DI>abBA2
+R2
+IRB7]E:J9ljiU@5MN^:2N<2
+R3
+R0
+R12
+8C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_uc.v
+FC:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_uc.v
+!i122 0
+L0 16 64
+R5
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_uc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena|C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/trena/tx_serial_uc.v|
+!i113 1
+R7
+R8
+R9

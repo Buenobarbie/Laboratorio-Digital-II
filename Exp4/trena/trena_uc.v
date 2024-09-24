@@ -61,10 +61,14 @@ module trena_uc (
 
         // Casos do Multiplexador 4x1 
         case(Eatual) 
-            (transmite_centena || espera_centena): sel_letra = 2'b00; 
-            (transmite_dezena || espera_dezena): sel_letra = 2'b01;
-            (transmite_unidade || espera_unidade): sel_letra = 2'b10;
-            (transmite_hash || espera_hash)   : sel_letra = 2'b11;
+            transmite_centena: sel_letra = 2'b00; 
+				espera_centena: sel_letra = 2'b00;
+            transmite_dezena: sel_letra = 2'b01;
+				espera_dezena: sel_letra = 2'b01;
+            transmite_unidade: sel_letra = 2'b10;
+				espera_unidade: sel_letra = 2'b10;
+            transmite_hash  : sel_letra = 2'b11;
+				espera_hash  : sel_letra = 2'b11;
             default          : sel_letra = 2'b00;
         endcase
         

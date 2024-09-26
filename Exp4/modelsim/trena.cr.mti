@@ -1,0 +1,162 @@
+C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm_uc.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm_uc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module contador_cm_uc
+
+Top level modules:
+	contador_cm_uc
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tx_serial_7O1
+
+Top level modules:
+	tx_serial_7O1
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_uc.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_uc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tx_serial_uc
+
+Top level modules:
+	tx_serial_uc
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1_fd.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/tx_serial_7O1_fd.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tx_serial_7O1_fd
+
+Top level modules:
+	tx_serial_7O1_fd
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_fd.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module trena_fd
+
+Top level modules:
+	trena_fd
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/interface_hcsr04_uc.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/interface_hcsr04_uc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module interface_hcsr04_uc
+
+Top level modules:
+	interface_hcsr04_uc
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/interface_hcsr04.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/interface_hcsr04.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module interface_hcsr04
+
+Top level modules:
+	interface_hcsr04
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/circuito_pwm.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/circuito_pwm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module circuito_pwm
+
+Top level modules:
+	circuito_pwm
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/deslocador_n.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/deslocador_n.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module deslocador_n
+
+Top level modules:
+	deslocador_n
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_m.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_m.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module contador_m
+
+Top level modules:
+	contador_m
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/edge_detector.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/edge_detector.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module edge_detector
+
+Top level modules:
+	edge_detector
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/gerador_pulso.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/gerador_pulso.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module gerador_pulso
+
+Top level modules:
+	gerador_pulso
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_uc.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/trena_uc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module trena_uc
+
+Top level modules:
+	trena_uc
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module contador_cm
+
+Top level modules:
+	contador_cm
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm_fd.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_cm_fd.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module contador_cm_fd
+
+Top level modules:
+	contador_cm_fd
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module exp4_trena
+
+Top level modules:
+	exp4_trena
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/registrador_n.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/registrador_n.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module registrador_n
+
+Top level modules:
+	registrador_n
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/mux_4x1_n.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/mux_4x1_n.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux_4x1_n
+
+Top level modules:
+	mux_4x1_n
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/hexa7seg.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/hexa7seg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hexa7seg
+
+Top level modules:
+	hexa7seg
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/controle_servo.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/controle_servo.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module controle_servo
+
+Top level modules:
+	controle_servo
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/interface_hcsr04_fd.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/interface_hcsr04_fd.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module interface_hcsr04_fd
+
+Top level modules:
+	interface_hcsr04_fd
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_bcd_3digitos.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/contador_bcd_3digitos.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module contador_bcd_3digitos
+
+Top level modules:
+	contador_bcd_3digitos
+
+} {} {}} C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena_tb.v {1 {vlog -work work -stats=none C:/Users/tatit/OneDrive/Documentos/USP/pcs3645/Exp4/modelsim/exp4_trena_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module exp4_trena_tb
+
+Top level modules:
+	exp4_trena_tb
+
+} {} {}}

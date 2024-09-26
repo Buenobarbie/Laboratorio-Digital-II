@@ -1,0 +1,89 @@
+module exp4_trena (
+    input wire        clock,
+    input wire        reset,
+    input wire        mensurar,
+    input wire        echo,
+    output wire       trigger,
+    output wire       saida_serial,
+    output wire [6:0] medida0,
+    output wire [6:0] medida1,
+    output wire [6:0] medida2,
+    output wire       pronto,
+    output wire [6:0] db_estado
+    output wire       db_echo,
+    output wire       db_trigger
+);
+
+    // Sinais internos
+    wire        s_mensurar;
+    wire        s_trigger;
+    wire        s_partida_serial;
+    wire        s_pronto_medida;
+    wire        s_pronto_serial;
+    wire [1:0]  s_sel_letra;
+    wire [11:0] s_medida ;
+    wire [3:0]  s_estado ;
+    
+    // Trata entrada mensurar (considerando borda de subida)
+    edge_detector DB ( 
+        .clock( clock      ),
+        .reset( reset      ),
+        .sinal( mensurar   ), 
+        .pulso( s_mensurar )
+    );
+
+    // Fluxo de dados
+    trena_fd U0 (
+        .clock         ( clock      ),
+        .reset         ( reset      ),
+        .mensurar      ( s_mensurar ),
+        .echo          ( echo       ),
+        .partida_serial( s_partida_serial ),
+        .sel_letra     ( s_sel_letra ),
+        .trigger       ( s_trigger),
+        .pronto_medida ( s_pronto_medida ),
+        .pronto_serial ( s_pronto_serial ),
+        .distancia     ( s_medida ),
+        .saida_serial  ( saida_serial )
+    );
+
+    // Unidade de controle
+    trena_uc U1 (
+        .clock         ( clock      ),
+        .reset         ( reset      ),
+        .mensurar      ( s_mensurar ),
+        .pronto_medida ( s_pronto_medida ),
+        .pronto_serial ( s_pronto_serial ),
+        .partida_serial( s_partida_serial ),
+        .pronto        ( pronto ),
+        .sel_letra     ( s_sel_letra ),
+        .db_estado     ( s_estado )
+    );
+
+    // Displays para medida (4 dígitos BCD)
+    hexa7seg H0 (
+        .hexa   (s_medida[3:0]), 
+        .display(medida0         )
+    );
+    hexa7seg H1 (
+        .hexa   (s_medida[7:4]), 
+        .display(medida1       )
+    );
+    hexa7seg H2 (
+        .hexa   (s_medida[11:8]), 
+        .display(medida2          )
+    );
+
+    // Sinais de saída
+    assign trigger = s_trigger;
+
+    // Sinal de depuração (estado da UC)
+    hexa7seg H5 (
+        .hexa   (s_estado ), 
+        .display(db_estado)
+    );
+
+    assign db_echo    = echo;
+    assign db_trigger = s_trigger;
+    assign db_medir   = medir;
+endmodule

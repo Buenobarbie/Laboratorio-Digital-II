@@ -17,24 +17,20 @@ module contador_cm_uc (
     input wire clock,
     input wire reset,
     input wire pulso,
-    input wire tick,
     output reg zera_tick,
     output reg conta_tick,
     output reg zera_bcd,
-    output reg conta_bcd,
-    output reg pronto
+    output reg pronto,
+    output reg [2:0] db_estado
 );
 
     // Tipos e sinais
     reg [2:0] Eatual, Eprox; // 3 bits são suficientes para os estados
 
     // Parâmetros para os estados
-	/* completar */
-    parameter X = 3'b000;
-    parameter Y = 3'b001;
-    parameter Z = 3'b010;
-    parameter W = 3'b011;
-    parameter F = 3'b100;
+    parameter inicial = 3'b000;
+    parameter medicao = 3'b001;
+    parameter fim = 3'b010;
 
     // Memória de estado
     always @(posedge clock, posedge reset) begin
@@ -47,15 +43,26 @@ module contador_cm_uc (
     // Lógica de próximo estado
     always @(*) begin
         case (Eatual)
-            /* completar */
+            inicial : Eprox = pulso ? medicao : inicial;
+            medicao : Eprox = pulso ? medicao : fim;
+            fim: Eprox = inicial;
+            default : Eprox = inicial;
         endcase
     end
 
     // Lógica de saída (Moore)
     always @(*) begin
-	
-        /* completar */
-		
+        zera_tick = (Eatual == inicial) ? 1'b1 : 1'b0;
+        conta_tick = (Eatual == medicao) ? 1'b1 : 1'b0;
+        zera_bcd = (Eatual == inicial) ? 1'b1 : 1'b0;
+        pronto = (Eatual == fim) ? 1'b1 : 1'b0;
+
+        case (Eatual)
+            inicial : db_estado = 3'b000;
+            medicao : db_estado = 3'b001;
+            fim : db_estado = 3'b010;
+            default : db_estado = 3'b000;
+        endcase
     end
 
 endmodule

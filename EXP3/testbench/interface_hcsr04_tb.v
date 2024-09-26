@@ -55,10 +55,10 @@ module interface_hcsr04_tb;
         $display("Inicio das simulacoes");
 
         // Inicialização do array de casos de teste
-        casos_teste[0] = 5882;   // 5882us (100cm)
-        casos_teste[1] = 5899;   // 5899us (100,29cm) truncar para 100cm
-        casos_teste[2] = 4353;   // 4353us (74cm)
-        casos_teste[3] = 4399;   // 4399us (74,79cm) arredondar para 75cm
+        casos_teste[0] = 4440;   // 4440us (75,50cm) arredondar para 75cm
+        casos_teste[1] = 4441;   // 4441us (75,48cm) truncar para 75cm
+        casos_teste[2] = 294;    // 294us (74cm)
+        casos_teste[3] = 0;      // 0us 
 
         // Valores iniciais
         medir_in = 0;

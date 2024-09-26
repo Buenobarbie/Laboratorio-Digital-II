@@ -30,8 +30,6 @@ module contador_cm #(
     wire s_zera_tick;
     wire s_conta_tick;
     wire s_zera_bcd;
-    wire s_conta_bcd;
-    wire s_tick;
 
     // Instanciação do contador_cm_fd
     contador_cm_fd #(
@@ -43,8 +41,6 @@ module contador_cm #(
         .zera_tick (s_zera_tick ),
         .conta_tick(s_conta_tick),
         .zera_bcd  (s_zera_bcd  ),
-        .conta_bcd (s_conta_bcd ),
-        .tick      (s_tick      ),
         .digito0   (digito0     ),
         .digito1   (digito1     ),
         .digito2   (digito2     ),
@@ -56,11 +52,9 @@ module contador_cm #(
         .clock     (clock       ),
         .reset     (reset       ),
         .pulso     (pulso       ),
-        .tick      (s_tick      ),
         .zera_tick (s_zera_tick ),
         .conta_tick(s_conta_tick),
         .zera_bcd  (s_zera_bcd  ),
-        .conta_bcd (s_conta_bcd ),
         .pronto    (pronto      )
     );
 

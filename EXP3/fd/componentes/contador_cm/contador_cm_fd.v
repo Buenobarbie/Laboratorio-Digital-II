@@ -21,8 +21,6 @@ module contador_cm_fd #(
     input wire        zera_tick,
     input wire        conta_tick,
     input wire        zera_bcd,
-    input wire        conta_bcd,
-    output wire       tick,
     output wire [3:0] digito0,
     output wire [3:0] digito1,
     output wire [3:0] digito2,
@@ -47,7 +45,7 @@ module contador_cm_fd #(
     contador_bcd_3digitos U2 (
         .clock   (clock    ),
         .zera    (zera_bcd ),
-        .conta   (conta_bcd),
+        .conta   (tick     ),
         .digito0 (digito0  ),
         .digito1 (digito1  ),
         .digito2 (digito2  ),

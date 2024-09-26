@@ -14,7 +14,8 @@ module sonar_uc (
     output reg conta_timer ,
     output reg zera_posicao,
     output reg conta_posicao,
-    output reg reset_servo
+    output reg reset_servo,
+    output reg medir
 );
 
     // Estados da UC
@@ -97,6 +98,7 @@ module sonar_uc (
         conta_timer = (Eatual == espera) ? 1'b1 : 1'b0;
         conta_posicao = (Eatual == atualiza_posicao) ? 1'b1 : 1'b0;
         fim_posicao = (Eatual == atualiza_posicao) ? 1'b1 : 1'b0;
+        medir = (Eatual == aguarda_medida) ? 1'b1 : 1'b0;
 
         partida_serial = (Eatual == transmite_centena_a || 
                         Eatual == transmite_dezena_a || 

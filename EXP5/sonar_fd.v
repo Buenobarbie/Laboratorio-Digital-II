@@ -15,7 +15,24 @@ module sonar_fd (
   output wire        pronto_serial,
   output wire [11:0] distancia,
   output wire [11:0] angulo, 
-  output wire        saida_serial
+  output wire        saida_serial,
+  output wire        fim_timer,
+  output wire        pwm,
+  // Depurações internas
+  output wire        db_reset_sensor,
+  output wire        db_medir_sensor,
+  output wire [3:0]  db_estado_sensor,
+
+  output wire        db_tick_uart,
+  output wire        db_partida_uart,
+  output wire        db_saida_serial_uart,
+  output wire [3:0]  db_estado_uart,
+
+  output wire        db_reset_servo,
+  output wire [2:0]  db_posicao_servo,
+  output wire        db_controle_servo
+
+
 );
 
   // Sinais internos
@@ -33,8 +50,7 @@ module sonar_fd (
   wire [2:0]  endereco_pos;
   
 
-
-  // Interface hcsr04
+  // Interface hcsr04 (sensor de distância)
   interface_hcsr04 sensor (
     .clock     (clock         ),
     .reset     (reset_servo   ),
@@ -43,9 +59,25 @@ module sonar_fd (
     .trigger   (trigger       ),
     .medida    (s_medida      ),
     .pronto    (pronto_medida ),
-    .db_reset  (              ),
-    .db_medir  (              ),
-    .db_estado (              )
+    .db_reset  (db_reset_sensor),
+    .db_medir  (db_medir_sensor),
+    .db_estado (db_estado_sensor)
+  );
+
+   // Contador updown
+  contador_updown #(
+    .M(8),
+    .N(3)
+  ) contador_posicao (
+    .clock   (clock),
+    .zera_as (1'b0 ),
+    .zera_s  (zera_posicao ),
+    .conta   (conta_posicao),
+    .Q       (endereco_pos ),
+    .inicio  (        ),
+    .fim     (        ),
+    .meio    (        ),
+    .direcao (        )
   );
 
   assign centena_ascii_m  = {3'b011, s_medida[11:8]};
@@ -83,10 +115,21 @@ module sonar_fd (
     .dados_ascii     ( dados_ascii    ),
     .saida_serial    ( saida_serial   ), 
     .pronto          ( pronto_serial  ),
-    .db_tick         (      ),
-    .db_partida      (      ),
-    .db_saida_serial (      ),
-    .db_estado       (      )
+    .db_tick         ( db_tick_uart   ),
+    .db_partida      ( db_partida_uart),
+    .db_saida_serial ( db_saida_serial_uart),
+    .db_estado       ( db_estado_uart )
+  );
+
+  // Servo motor
+  controle_servo_3 servo (
+    .clock     (clock       ),
+    .reset     (reset_servo ),
+    .posicao   (endereco_pos),
+    .controle  (s_angulo    ),
+    .db_reset  (db_reset_sensor ),
+    .db_posicao( db_posicao_servo),
+    .db_controle(db_controle_servo)
   );
 
   
@@ -105,22 +148,6 @@ module sonar_fd (
         .meio    (     )  // porta meio em aberto (desconectada)
     );
 
-  // Contador updown
-  contador_updown #(
-    .M(8),
-    .N(3)
-  ) contador_posicao (
-    .clock   (clock),
-    .zera_as (1'b0 ),
-    .zera_s  (zera_posicao ),
-    .conta   (conta_posicao),
-    .Q       (endereco_pos ),
-    .inicio  (        ),
-    .fim     (        ),
-    .meio    (        ),
-    .direcao (        )
-  );
-  
   // ROM 
   rom_angulos_8x24 rom (
       .input  (endereco_pos),

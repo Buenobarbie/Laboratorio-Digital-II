@@ -7,7 +7,7 @@ module sonar_uc (
     input      fim_timer, 
     input      pronto_serial  ,
     output reg partida_serial ,
-    output reg pronto_posicao ,
+    output reg fim_posicao ,
     output reg [2:0] sel_letra,
     output reg [4:0] db_estado,
 	output reg zera_timer,
@@ -91,14 +91,21 @@ module sonar_uc (
 
     // Logica de saida (maquina de Moore)
     always @* begin
-        zera_timer = (Ea)
-        
-        
-        partida_serial = (Eatual == transmite_centena || Eatual == transmite_dezena || 
-                          Eatual == transmite_unidade || Eatual == transmite_hash ) ? 1'b1 : 1'b0;
-        pronto  = (Eatual == final) ? 1'b1 : 1'b0;
-		zera_auto = (Eatual == inicial) ? 1'b1 : 1'b0;
-		conta_auto = (Eatual == automatico) ? 1'b1 : 1'b0;
+        zera_timer = (Eatual == preparacao) ? 1'b1 : 1'b0;
+        reset_servo = (Eatual == preparacao) ? 1'b1 : 1'b0;
+        zera_posicao = (Eatual == preparacao) ? 1'b1 : 1'b0;
+        conta_timer = (Eatual == espera) ? 1'b1 : 1'b0;
+        conta_posicao = (Eatual == atualiza_posicao) ? 1'b1 : 1'b0;
+        fim_posicao = (Eatual == atualiza_posicao) ? 1'b1 : 1'b0;
+
+        partida_serial = (Eatual == transmite_centena_a || 
+                        Eatual == transmite_dezena_a || 
+                        Eatual == transmite_unidade_a ||
+                        Eatual == transmite_virgula ||
+                        Eatual == transmite_centena_m ||
+                        Eatual == transmite_dezena_m ||
+                        Eatual == transmite_unidade_m ||
+                        Eatual == transmite_hash ) ? 1'b1 : 1'b0;
 
         // Casos do Multiplexador 4x1 
         case(Eatual) 

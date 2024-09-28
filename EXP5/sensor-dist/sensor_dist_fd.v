@@ -17,6 +17,9 @@ module interface_hcsr04_fd (
     input wire         zera,
     input wire         gera,
     input wire         registra,
+    input wire         conta_timeout,
+    input wire         zera_timeout,
+    output wire        fim_timeout,
     output wire        fim_medida,
     output wire        trigger,
     output wire        fim,
@@ -29,7 +32,7 @@ module interface_hcsr04_fd (
     // (U1) pulso de 10us (??? clocks)
     gerador_pulso #(
         .largura(500) 
-    ) U1 (
+    ) gerador_pulso (
         .clock (clock  ),
         .reset (zera),
         .gera  (gera),
@@ -42,7 +45,7 @@ module interface_hcsr04_fd (
     contador_cm #(
         .R(2941), 
         .N(12)
-    ) U2 (
+    ) contador_centimetro (
         .clock  (clock         ),
         .reset  (zera),
         .pulso  (pulso),
@@ -56,12 +59,28 @@ module interface_hcsr04_fd (
     // (U3) registrador
     registrador_n #(
         .N(12)
-    ) U3 (
+    ) registrador (
         .clock  (clock    ),
         .clear  (zera),
         .enable (registra),
         .D      (s_medida ),
         .Q      (distancia)
     );
+
+    // Contador de 1s
+    // clock = 50MHz
+    // 1s = 50_000_000 clocks
+    contador_m #(
+        .M(50_000_000),
+        .N(26)
+    ) timeout (
+    .clock    (clock),
+    .zera_as  (1'b0),
+    .zera_s   (zera_timeout),
+    .conta    (conta_timeout),
+    .Q        (),
+    .fim      (fim_timeout), 
+    .meio     ()
+  );
 
 endmodule

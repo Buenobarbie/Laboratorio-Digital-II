@@ -10,7 +10,7 @@ module sonar_uc (
     output reg partida_serial,
     output reg fim_posicao,
     output reg [3:0] db_estado,
-	output reg zera_timer,
+	 output reg zera_timer,
     output reg conta_timer,
     output reg zera_posicao,
     output reg conta_posicao,

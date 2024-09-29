@@ -51,6 +51,8 @@ module sonar_fd (
   wire [6:0]  dados_ascii;
   wire [2:0]  endereco_pos;
   
+  wire [3:0]  s_sel_letra;
+  
 
   // Interface hcsr04 (sensor de distância)
   interface_hcsr04 sensor (
@@ -67,7 +69,7 @@ module sonar_fd (
   );
 
    // Contador updown
-  contador_updown #(
+  contadorg_updown_m #(
     .M(8),
     .N(3)
   ) contador_posicao (
@@ -128,8 +130,8 @@ module sonar_fd (
     .clock     (clock       ),
     .reset     (reset_servo ),
     .posicao   (endereco_pos), 
-    .controle  (s_angulo    ),
-    .db_reset  (db_reset_sensor ),
+    .controle  (pwm    ),
+    .db_reset  (db_reset_servo ),
     .db_posicao( db_posicao_servo),
     .db_controle(db_controle_servo)
   );
@@ -169,8 +171,8 @@ module sonar_fd (
 
   // ROM 
   rom_angulos_8x24 rom (
-      .input  (endereco_pos),
-      .output (s_angulo)
+      .endereco  (endereco_pos),
+      .saida (s_angulo)
   );
   
 

@@ -20,7 +20,13 @@ module sonar (
     output wire       db_saida_serial_uart,
     output wire [6:0] db_estado_uart,
     output wire       db_reset_servo,
-    output wire       db_controle_servo
+    output wire       db_controle_servo,
+    output wire [6:0] medida0,
+    output wire [6:0] medida1,
+    output wire [6:0] medida2,
+    output wire [6:0] angulo0,
+    output wire [6:0] angulo1,
+    output wire [6:0] angulo2
 );
 
     // Sinais internos
@@ -32,7 +38,7 @@ module sonar (
     wire [11:0] s_medida;
     wire [3:0]  s_estado;
 	 
-	wire s_zera_timer;
+	 wire s_zera_timer;
     wire s_conta_timer;
     wire s_fim_timer;
     
@@ -46,16 +52,12 @@ module sonar (
     wire s_conta_serial;
     wire s_fim_transmissao;
 
-    wire s_distancia;
-    wire s_angulo;
-   
-
-    
-    
+    wire [11:0] s_distancia;
+    wire [23:0] s_angulo;
     
     // Trata entrada mensurar (considerando borda de subida)
     // ATENÇÃO: ATIVO EM ZERO
-    edge_detector edge ( 
+    edge_detector edge_detector ( 
         .clock( clock  ),
         .reset( reset  ),
         .sinal( ~ligar ), 
@@ -63,7 +65,7 @@ module sonar (
     );
 
     // Fluxo de dados
-    trena_fd fd (
+    sonar_fd fd (
         .clock          ( clock ),
         .reset          ( reset ),
         .echo           ( echo  ),
@@ -98,24 +100,25 @@ module sonar (
     );
 
     // Unidade de controle
-    trena_uc uc (
+    sonar_uc uc (
         .clock          ( clock      ),
         .reset          ( reset      ),
         .ligar          ( ligar      ),
         .pronto_medida  ( s_pronto_medida ),
-        .fim_timer      ( s_fim_auto),
+        .fim_timer      ( s_fim_timer),
         .pronto_serial  ( s_pronto_serial ),
-        .fim_transmissao( s_fim_auto),
+        .fim_transmissao( s_fim_transmissao ),
         .partida_serial ( s_partida_serial ),
+		  .fim_posicao    ( fim_posicao ),
         .db_estado      ( s_estado ),
-        .zera_timer     ( s_zera_auto),
-        .conta_timer    ( s_conta_auto),
-        .zera_posicao   ( s_zera_auto),
-        .conta_posicao  ( s_conta_auto),
-        .reset_servo    ( s_zera_auto),
-        .medir          ( s_mensurar ),
-        .zera_serial    ( s_zera_auto),
-        .conta_serial   ( s_conta_auto)
+        .zera_timer     ( s_zera_timer),
+        .conta_timer    ( s_conta_timer),
+        .zera_posicao   ( s_zera_posicao),
+        .conta_posicao  ( s_conta_posicao),
+        .reset_servo    ( s_reset_servo),
+        .medir          ( s_medir ),
+        .zera_serial    ( s_zera_serial),
+        .conta_serial   ( s_conta_serial)
     );
 
     // Displays para medida (4 dígitos BCD)

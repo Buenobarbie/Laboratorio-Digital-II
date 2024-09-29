@@ -52,7 +52,7 @@ module sonar_fd (
   wire [2:0]  endereco_pos;
   
   wire [3:0]  s_sel_letra;
-  
+  wire [2:0] sel_letra;
 
   // Interface hcsr04 (sensor de distância)
   interface_hcsr04 sensor (
@@ -150,7 +150,6 @@ module sonar_fd (
         .meio    (     )  // porta meio em aberto (desconectada)
     );
 
-    wire [2:0] sel_letra;
     assign sel_letra = s_sel_letra[2:0];
 
   

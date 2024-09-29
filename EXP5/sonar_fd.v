@@ -15,7 +15,7 @@ module sonar_fd (
   output wire        pronto_medida,
   output wire        pronto_serial,
   output wire [11:0] distancia,
-  output wire [11:0] angulo, 
+  output wire [23:0] angulo, 
   output wire        saida_serial,
   output wire        fim_timer,
   output wire        pwm,
@@ -43,7 +43,7 @@ module sonar_fd (
   wire [6:0]  dezena_ascii_m;
   wire [6:0]  unidade_ascii_m;
 
-  wire [11:0] s_angulo;
+  wire [23:0] s_angulo;
   wire [6:0]  centena_ascii_a;
   wire [6:0]  dezena_ascii_a;
   wire [6:0]  unidade_ascii_a;
@@ -87,9 +87,9 @@ module sonar_fd (
   assign unidade_ascii_m  = {3'b011, s_medida[3:0] };
   assign distancia        = s_medida;
 
-  assign centena_ascii_a  = {3'b011, s_angulo[11:8]};
-  assign dezena_ascii_a   = {3'b011, s_angulo[7:4] };
-  assign unidade_ascii_a  = {3'b011, s_angulo[3:0] };
+  assign centena_ascii_a  = s_angulo[22:16];
+  assign dezena_ascii_a   = s_angulo[14:8];
+  assign unidade_ascii_a  = s_angulo[6:0];
   assign angulo        = s_angulo;
   
 

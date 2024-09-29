@@ -17,60 +17,81 @@ module sonar (
 );
 
     // Sinais internos
-    wire        s_mensurar;
+    wire        s_ligar;
     wire        s_trigger;
     wire        s_partida_serial;
     wire        s_pronto_medida;
     wire        s_pronto_serial;
-    wire [1:0]  s_sel_letra;
     wire [11:0] s_medida ;
     wire [3:0]  s_estado ;
 	 
-	 wire        s_zera_auto;
-	 wire        s_conta_auto;
-	 wire        s_fim_auto;
+	wire        s_zera_auto;
+	wire        s_conta_auto;
+	wire        s_fim_auto;
     
     // Trata entrada mensurar (considerando borda de subida)
+    // ATENÇÃO: ATIVO EM ZERO
     edge_detector DB ( 
-        .clock( clock      ),
-        .reset( reset      ),
-        .sinal( ~mensurar   ), 
-        .pulso( s_mensurar )
+        .clock( clock  ),
+        .reset( reset  ),
+        .sinal( ~ligar ), 
+        .pulso( s_ligar)
     );
 
     // Fluxo de dados
     trena_fd U0 (
-        .clock         ( clock      ),
-        .reset         ( reset      ),
-        .mensurar      ( s_mensurar ),
-        .echo          ( echo       ),
-        .partida_serial( s_partida_serial ),
-        .sel_letra     ( s_sel_letra ),
-        .trigger       ( s_trigger),
-		  .conta_auto    ( s_conta_auto),
-		  .zera_auto     ( s_zera_auto),
-        .pronto_medida ( s_pronto_medida ),
-        .pronto_serial ( s_pronto_serial ),
-        .distancia     ( s_medida ),
-        .saida_serial  ( saida_serial ),
-		  .fim_auto      (s_fim_auto)
+        .clock          ( clock      ),
+        .reset          ( reset      ),
+        .echo           ( echo       ),
+        .partida_serial ( s_partida_serial ),
+        .zera_timer     (  ),
+        .conta_timer    ( ),
+        .zera_posicao   (  ),
+        .conta_posicao  ( ),
+        .reset_servo    (  ),
+        .medir          (   ),
+        .zera_serial    (  ),
+        .conta_serial   ( ),
+        .trigger        (    ),
+        .pronto_medida  ( s_pronto_medida ),
+        .pronto_serial  ( s_pronto_serial ),
+        .distancia      (  ),
+        .angulo         (  ),
+        .saida_serial   ( saida_serial),
+        .fim_timer      (   ),
+        .pwm            (   ),
+        .fim_transmissao(   ),
+        .db_reset_sensor     ( db_reset_sensor ),
+        .db_medir_sensor     ( db_medir_sensor ),
+        .db_estado_sensor    ( db_estado_sensor ),
+        .db_tick_uart        ( db_tick_uart ),
+        .db_partida_uart     ( db_partida_uart ),
+        .db_saida_serial_uart( db_saida_serial_uart ),
+        .db_estado_uart      ( db_estado_uart ),
+        .db_reset_servo      ( db_reset_servo ),
+        .db_posicao_servo    ( db_posicao_servo ),
+        .db_controle_servo   ( db_controle_servo )
     );
 
     // Unidade de controle
     trena_uc U1 (
         .clock         ( clock      ),
         .reset         ( reset      ),
-        .mensurar      ( s_mensurar ),
+        .ligar         ( ligar      ),
         .pronto_medida ( s_pronto_medida ),
+        .fim_timer     ( s_fim_auto),
         .pronto_serial ( s_pronto_serial ),
-		  .modo_auto     ( modo_auto),
-		  .fim_auto      ( s_fim_auto),
+        .fim_transmissao( s_fim_auto),
         .partida_serial( s_partida_serial ),
-        .pronto        ( pronto ),
-        .sel_letra     ( s_sel_letra ),
         .db_estado     ( s_estado ),
-		  .conta_auto    ( s_conta_auto),
-		  .zera_auto     ( s_zera_auto)
+        .zera_timer    ( s_zera_auto),
+        .conta_timer   ( s_conta_auto),
+        .zera_posicao  ( s_zera_auto),
+        .conta_posicao ( s_conta_auto),
+        .reset_servo   ( s_zera_auto),
+        .medir         ( s_mensurar ),
+        .zera_serial   ( s_zera_auto),
+        .conta_serial  ( s_conta_auto)
     );
 
     // Displays para medida (4 dígitos BCD)

@@ -3,13 +3,14 @@ module sonar_fd (
   input wire         reset,
   input wire         echo,
   input wire         partida_serial,
-  input wire  [2:0]  sel_letra,
   input wire         zera_timer,
   input wire         conta_timer,
   input wire         zera_posicao,
   input wire         conta_posicao,
   input wire         reset_servo,
   input wire         medir,
+  input wire         zera_serial,
+  input wire         conta_serial,
   output wire        trigger,
   output wire        pronto_medida,
   output wire        pronto_serial,
@@ -18,6 +19,7 @@ module sonar_fd (
   output wire        saida_serial,
   output wire        fim_timer,
   output wire        pwm,
+  output wire        fim_transmissao,
   // Depurações internas
   output wire        db_reset_sensor,
   output wire        db_medir_sensor,
@@ -131,6 +133,23 @@ module sonar_fd (
     .db_posicao( db_posicao_servo),
     .db_controle(db_controle_servo)
   );
+
+  // Conatdor de qual dado vai ser transmitido
+  contador_m #(
+        .M(9),
+        .N(4)
+  ) contador_serial (
+        .clock   (clock),
+        .zera_as (1'b0 ),
+        .zera_s  (zera_serial),
+        .conta   (conta_serial),
+        .Q       (s_sel_letra  ), // porta Q em aberto (desconectada)
+        .fim     (fim_transmissao ),
+        .meio    (     )  // porta meio em aberto (desconectada)
+    );
+
+    wire [2:0] sel_letra;
+    assign sel_letra = s_sel_letra[2:0];
 
   
   // Contador de 2s

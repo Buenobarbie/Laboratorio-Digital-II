@@ -31,7 +31,7 @@ module controle_servo_tb;
     always #((clockPeriod / 2)) clock_in = ~clock_in;
 
     // Componente a ser testado (Device Under Test -- DUT)
-    controle_servo           // instanciado com valores default
+    controle_servo_3           // instanciado com valores default
     dut (
         .clock       (clock_in     ),
         .reset       (reset_in     ),

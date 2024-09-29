@@ -51,6 +51,7 @@ module sonar_fd (
   wire [6:0]  dados_ascii;
   wire [2:0]  endereco_pos;
   
+  wire [2:0] sel_letra;
   wire [3:0]  s_sel_letra;
   
 
@@ -150,14 +151,14 @@ module sonar_fd (
         .meio    (     )  // porta meio em aberto (desconectada)
     );
 
-    wire [2:0] sel_letra;
     assign sel_letra = s_sel_letra[2:0];
 
   
   // Contador de 2s
   // 2s = 100000000 clocks para clock de 50MHz
+  // Para simulação utilizaremos 0,012s --> 600000
     contador_m #(
-        .M(100_000_000),
+        .M(600_000),
         .N(27)
     ) timer (
         .clock   (clock),

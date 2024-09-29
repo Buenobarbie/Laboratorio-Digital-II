@@ -70,8 +70,9 @@ module interface_hcsr04_fd (
     // Contador de 1s
     // clock = 50MHz
     // 1s = 50_000_000 clocks
+	 //Para simulação utilizaremos timeout de 0,030s --> 1.500.000
     contador_m #(
-        .M(50_000_000),
+        .M(1_500_000),
         .N(26)
     ) timeout (
     .clock    (clock),

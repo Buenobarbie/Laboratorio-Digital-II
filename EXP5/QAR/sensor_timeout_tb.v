@@ -2,7 +2,7 @@
  
 `timescale 1ns/1ns
 
-module interface_hcsr04_tb;
+module sensor_timeout_tb;
 
     // Declaração de sinais
     reg         clock_in = 0;
@@ -83,7 +83,7 @@ module interface_hcsr04_tb;
             #(400_000); // 400 us
 
             // 4) Espera 1s (tempo para causar timeout)
-            #(50_000_000); // 1 s
+            #(1_000_000_000); // 1 s
 
             // 5) Gera pulso de echo
             echo_in = 1;

@@ -3,30 +3,28 @@ module sonar (
     input wire        reset,
     input wire        ligar,
     input wire        echo,
+    input wire        sel_display, // 0: Angulo, 1: Estados
     output wire       trigger,
     output wire       pwm,
     output wire       saida_serial,
     output wire       fim_posicao,
-    output wire [6:0] db_estado,
-    output wire       db_echo,
-    output wire       db_trigger,
-    output wire       db_pwm,
-    output wire       db_posicao_servo,
-    output wire       db_reset_sensor,
-    output wire       db_medir_sensor,
-    output wire [6:0] db_estado_sensor,
-    output wire       db_tick_uart,
-    output wire       db_partida_uart,
-    output wire       db_saida_serial_uart,
-    output wire [6:0] db_estado_uart,
-    output wire       db_reset_servo,
-    output wire       db_controle_servo,
+    output wire       db_echo,     // GPIO
+    output wire       db_trigger,  // GPIO
+    output wire       db_pwm,      // GPIO
+    output wire [2:0] db_posicao_servo, // 3 Leds
+    output wire       db_reset_sensor,  // LED
+    output wire       db_medir_sensor,  // LED
+    output wire       db_tick_uart,  // GPIO
+    output wire       db_partida_uart, // GPIO
+    output wire       db_saida_serial_uart, // GPIO
+    output wire       db_reset_servo, // LED
+    output wire       db_controle_servo, // GPIO
     output wire [6:0] medida0,
     output wire [6:0] medida1,
     output wire [6:0] medida2,
-    output wire [6:0] angulo0,
-    output wire [6:0] angulo1,
-    output wire [6:0] angulo2
+    output wire [6:0] H3_out,
+    output wire [6:0] H4_out,
+    output wire [6:0] H5_out
 );
 
     // Sinais internos
@@ -35,7 +33,6 @@ module sonar (
     wire        s_partida_serial;
     wire        s_pronto_medida;
     wire        s_pronto_serial;
-    wire [11:0] s_medida;
     wire [3:0]  s_estado;
 	 
 	 wire s_zera_timer;
@@ -123,44 +120,48 @@ module sonar (
 
     // Displays para medida (4 dígitos BCD)
     hexa7seg H0 (
-        .hexa   (s_medida[3:0]), 
+        .hexa   (s_distancia[3:0]), 
         .display(medida0         )
     );
     hexa7seg H1 (
-        .hexa   (s_medida[7:4]), 
+        .hexa   (s_distancia[7:4]), 
         .display(medida1       )
     );
     hexa7seg H2 (
-        .hexa   (s_medida[11:8]), 
+        .hexa   (s_distancia[11:8]), 
         .display(medida2          )
     );
 
+
+    // Multiplexador para angulo ou db_estados
+    wire H3_in;
+    wire H4_in;
+    wire H5_in;
+
+    assign H3_in = sel_display ? s_estado : s_angulo[3:0];
+    assign H4_in = sel_display ? db_estado_sensor : s_angulo[11:8];
+    assign H5_in = sel_display ? db_estado_uart : s_angulo[19:16];
+
     // Displays para o angulo (4 dígitos BCD)
     hexa7seg H3 (
-        .hexa   (s_angulo[3:0]), 
-        .display(angulo0       )
+        .hexa   (H3_in), 
+        .display(H3_out       )
     );
 
     hexa7seg H4 (
-        .hexa   (s_angulo[11:8]), 
-        .display(angulo1       )
+        .hexa   (H4_in), 
+        .display(H4_out       )
     );
 
     hexa7seg H5 (
-        .hexa   (s_angulo[19:16]), 
-        .display(angulo2       )
+        .hexa   (H5_in), 
+        .display(H5_out )
     );
 
 
     // Sinais de saída
-    assign trigger = s_trigger;
-
-    // Sinal de depuração (estado da UC)
-    hexa7seg H6 (
-        .hexa   (s_estado ), 
-        .display(db_estado)
-    );
-
+    assign trigger = s_trigger;		
     assign db_echo    = echo;
     assign db_trigger = s_trigger;
+	 assign db_pwm = pwm;
 endmodule

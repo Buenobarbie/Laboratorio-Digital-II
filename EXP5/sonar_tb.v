@@ -83,18 +83,26 @@ module sonar_tb;
         $display("Inicio das simulacoes");
 
         // Inicialização do array de casos de teste
-        casos_teste[0] = 5882;   // 5882us (100cm)
-        casos_teste[1] = 5899;   // 5899us (100,29cm) truncar para 100cm
-        casos_teste[2] = 4353;   // 4353us (74cm)
-        casos_teste[3] = 4399;   // 4399us (74,79cm) arredondar para 75cm
-        casos_teste[4] = 588;      // (10cm)
-        casos_teste[5] = 589;      // (10,08cm) truncar para 10cm
-        casos_teste[6] = 1000;     // (17,1cm) truncar para 17cm
-        casos_teste[7] = 439;      // (7,5cm) truncar para 7cm
+        casos_teste[0]  = 5882;   // 5882us (100cm)
+        casos_teste[1]  = 5899;   // 5899us (100,29cm) truncar para 100cm
+        casos_teste[2]  = 4353;   // 4353us (74cm)
+        casos_teste[3]  = 4399;   // 4399us (74,79cm) arredondar para 75cm
+        casos_teste[4]  = 588;    // (10cm)
+        casos_teste[5]  = 589;    // (10,08cm) truncar para 10cm
+        casos_teste[6]  = 1000;   // (17,1cm) truncar para 17cm
+        casos_teste[7]  = 439;    // (7,5cm) truncar para 7cm
+        casos_teste[8]  = 5882;   // 5882us (100cm)
+        casos_teste[9]  = 5899;   // 5899us (100,29cm) truncar para 100cm
+        casos_teste[10] = 4353;   // 4353us (74cm)
+        casos_teste[11] = 4399;   // 4399us (74,79cm) arredondar para 75cm
+        casos_teste[12] = 588;    // (10cm)
+        casos_teste[13] = 5882;   // 5882us (100cm)
+        casos_teste[14] = 5899;   // 5899us (100,29cm) truncar para 100cm
+        casos_teste[15] = 4353;   // 4353us (74cm)
 
 
         // Valores iniciais
-        mensurar_in = 0;
+        ligar_in = 0;
         echo_in  = 0;
 
         // Reset
@@ -109,33 +117,37 @@ module sonar_tb;
         #(100_000); // 100 us
 
         // Loop pelos casos de teste
-        for (caso = 1; caso < 9; caso = caso + 1) begin
+        for (caso = 1; caso < 16; caso = caso + 1) begin
             // 1) Determina a largura do pulso echo
             $display("Caso de teste %0d: %0dus", caso, casos_teste[caso-1]);
             larguraPulso = casos_teste[caso-1]*1000; // 1us=1000
 
-            // 2) Liga o circuito
-            @(negedge clock_in);
-            ligar_in = 1;
-            #(5*clockPeriod);
-        
+            if (caso == 12) begin
+                ligar_in = 0;
+                #(10000*clockPeriod);
+            end
+            else begin
+                // 2) Liga o circuito
+                @(negedge clock_in);
+                ligar_in = 1;
+                #(5*clockPeriod);
+            
+                // 3) Espera por 400us (tempo entre trigger e echo)
+                #(400_000); // 400 us
 
-            // 3) Espera por 400us (tempo entre trigger e echo)
-            #(400_000); // 400 us
+                // 4) Gera pulso de echo
+                echo_in = 1;
+                #(larguraPulso);
+                echo_in = 0;
 
-            // 4) Gera pulso de echo
-            echo_in = 1;
-            #(larguraPulso);
-            echo_in = 0;
+                // 5) Espera final da medida
+                wait (fim_posicao == 1'b1);
+                $display("Fim do caso %0d", caso);
 
-            // 5) Espera final da medida
-            wait (fim_posicao == 1'b1);
-            $display("Fim do caso %0d", caso);
-
-            // 6) Espera entre casos de teste
-            #(100_000); // 100 us
+                // 6) Espera entre casos de teste
+                #(100_000); // 100 us
+            end     
         end
-
         // Fim da simulação
         $display("Fim das simulacoes");
         caso = 99; 

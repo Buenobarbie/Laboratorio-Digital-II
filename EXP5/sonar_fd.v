@@ -61,8 +61,8 @@ module sonar_fd (
     .trigger   (trigger       ),
     .medida    (s_medida      ),
     .pronto    (pronto_medida ),
-    .db_reset  (db_reset_sensor),
-    .db_medir  (db_medir_sensor),
+    .db_reset  (db_reset_sensor ),
+    .db_medir  (db_medir_sensor ),
     .db_estado (db_estado_sensor)
   );
 
@@ -90,7 +90,7 @@ module sonar_fd (
   assign centena_ascii_a  = s_angulo[22:16];
   assign dezena_ascii_a   = s_angulo[14:8];
   assign unidade_ascii_a  = s_angulo[6:0];
-  assign angulo        = s_angulo;
+  assign angulo           = s_angulo;
   
 
   // Multiplexador 4x1
@@ -127,7 +127,7 @@ module sonar_fd (
   controle_servo_3 servo (
     .clock     (clock       ),
     .reset     (reset_servo ),
-    .posicao   (endereco_pos),
+    .posicao   (endereco_pos), 
     .controle  (s_angulo    ),
     .db_reset  (db_reset_sensor ),
     .db_posicao( db_posicao_servo),

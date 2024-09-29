@@ -1,39 +1,70 @@
 
 `timescale 1ns/1ns
 
-module exp4_trena_tb;
+module sonar_tb;
 
     // Declaração de sinais
     reg         clock_in = 0;
     reg         reset_in = 0;
-    reg         mensurar_in = 0;
-    reg         echo_in = 0;
-    wire        trigger_out;
-    wire        saida_serial_out;
-    wire [6:0]  medida0_out;
-    wire [6:0]  medida1_out;
-    wire [6:0]  medida2_out;
-    wire        pronto_out;
-    wire [6:0]  db_estado_out;
-    wire        db_echo_out;
-    wire        db_trigger_out;
+    reg         ligar_in = 0;
+    reg         echo_in  = 0;
+    reg         sel_display_in = 0;
+    wire        trigger;
+    wire        pwm;
+    wire        saida_serial;
+    wire        fim_posicao;
+    wire        db_echo;
+    wire        db_trigger;
+    wire        db_pwm;
+    wire [2:0]  db_posicao_servo;
+    wire        db_reset_sensor;
+    wire        db_medir_sensor;
+    wire        db_tick_uart;
+    wire        db_partida_uart;
+    wire        db_saida_serial_uart;
+    wire        db_reset_servo;
+    wire        db_controle_servo;
+    wire [6:0] medida0;
+    wire [6:0] medida1;
+    wire [6:0] medida2;
+    wire [6:0] H3_out;
+    wire [6:0] H4_out;
+    wire [6:0] H5_out;
+
+
 
     // Componente a ser testado (Device Under Test -- DUT)
-    exp4_trena dut (
-        .clock        (clock_in        ),
-        .reset        (reset_in        ),
-        .mensurar     (mensurar_in     ),
-        .echo         (echo_in         ),
-        .trigger      (trigger_out     ),
-        .saida_serial (saida_serial_out),
-        .medida0      (medida0_out     ),
-        .medida1      (medida1_out     ), 
-        .medida2      (medida2_out     ),
-        .pronto       (pronto_out      ),
-        .db_estado    (db_estado_out   ),
-        .db_echo      (db_echo_out     ),
-        .db_trigger   (db_trigger_out  )
+    sonar dut (
+        .clock          (clock_in),
+        .reset          (reset_in),
+        .ligar          (ligar_in),
+        .echo           (echo_in),
+        .sel_display    (sel_display_in),
+        .trigger        (trigger),
+        .pwm            (pwm),
+        .saida_serial   (saida_serial),
+        .fim_posicao    (fim_posicao),
+        .db_echo        (db_echo),
+        .db_trigger     (db_trigger),
+        .db_pwm         (db_pwm),
+        .db_posicao_servo(db_posicao_servo),
+        .db_reset_sensor(db_reset_sensor),
+        .db_medir_sensor(db_medir_sensor),
+        .db_tick_uart   (db_tick_uart),
+        .db_partida_uart(db_partida_uart),
+        .db_saida_serial_uart(db_saida_serial_uart),
+        .db_reset_servo (db_reset_servo),
+        .db_controle_servo(db_controle_servo),
+        .medida0        (medida0),
+        .medida1        (medida1),
+        .medida2        (medida2),
+        .H3_out         (H3_out),
+        .H4_out         (H4_out),
+        .H5_out         (H5_out)
+        
     );
+
+
 
     // Configurações do clock
     parameter clockPeriod = 20; // clock de 50MHz
@@ -56,6 +87,11 @@ module exp4_trena_tb;
         casos_teste[1] = 5899;   // 5899us (100,29cm) truncar para 100cm
         casos_teste[2] = 4353;   // 4353us (74cm)
         casos_teste[3] = 4399;   // 4399us (74,79cm) arredondar para 75cm
+        casos_teste[4] = 588;      // (10cm)
+        casos_teste[5] = 589;      // (10,08cm) truncar para 10cm
+        casos_teste[6] = 1000;     // (17,1cm) truncar para 17cm
+        casos_teste[7] = 439;      // (7,5cm) truncar para 7cm
+
 
         // Valores iniciais
         mensurar_in = 0;
@@ -73,16 +109,16 @@ module exp4_trena_tb;
         #(100_000); // 100 us
 
         // Loop pelos casos de teste
-        for (caso = 1; caso < 5; caso = caso + 1) begin
+        for (caso = 1; caso < 9; caso = caso + 1) begin
             // 1) Determina a largura do pulso echo
             $display("Caso de teste %0d: %0dus", caso, casos_teste[caso-1]);
             larguraPulso = casos_teste[caso-1]*1000; // 1us=1000
 
-            // 2) Envia pulso medir
+            // 2) Liga o circuito
             @(negedge clock_in);
-            mensurar_in = 1;
+            ligar_in = 1;
             #(5*clockPeriod);
-            mensurar_in = 0;
+        
 
             // 3) Espera por 400us (tempo entre trigger e echo)
             #(400_000); // 400 us
@@ -93,7 +129,7 @@ module exp4_trena_tb;
             echo_in = 0;
 
             // 5) Espera final da medida
-            wait (pronto_out == 1'b1);
+            wait (fim_posicao == 1'b1);
             $display("Fim do caso %0d", caso);
 
             // 6) Espera entre casos de teste
